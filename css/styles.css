@@ -17,33 +17,61 @@
     font-size: 15px;
 }
 
+/* Navigation div */
 .nav{
     display: flex;
     height: 35px;
     background-color: rgb(55,60,63);
 }
-
 .nav .text{
     width: 250px;
     color: #ffffff;
     padding-left: 35px;
     padding-top: 7px;
 }
-
 .nav .menu-button img{
     width: 35px;
     height: 35px;
 }
-  
+
 .main-block{
+    display: block;
     height: 175px;
     background: linear-gradient(to bottom right,
                 rgb(25,180,198), rgb(7,138,164));
+    padding-left: 15px;
+}
+.main-block .main-text{
+    padding-top:45px;
+    font-size: 21px;
+    color: rgb(255,255,255);
+}
+.main-block .refs{
+    display: flex;
+    margin-top: 10px;
+}
+
+.main-block .refs .site-ref{
+    width: 230px;
+    font-size: 13px;
+    color:rgba(255,255,255,0.6);
+}
+.main-block .refs .arrow{
+    font-weight: bold;
+    color: rgb(255,255,255);
 }
 
 .two-blocks-ref{
     display: flex;
     height: 75px;
+    align-content: space-between;
+}
+.two-blocks-ref .first .text{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    color: rgb(145,129,159);
+    font-size: 10px;
 }
 .two-blocks-ref .first{
     width: 800px;
@@ -54,9 +82,24 @@
     background-color: rgb(188,49,131);
 }
 
+.two-blocks-ref .second p{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    color: rgb(255,255,255);
+}
+
 .block-ref{
     height: 270px;
     background: rgb( 91, 15, 161);
+}
+.block-ref{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: rgb(255,255,255);
 }
 
 .img1 img{
@@ -70,4 +113,29 @@
 .img2 img{
     width: 320px;
     height: 270px;
+}
+
+.footer{
+    background-color: rgb(235,235,235);
+    color: rgb( 81, 81, 81 );
+    padding-left:25px;
+    padding-right:30px;
+    font-size:   14px;
+    line-height: 1.63;
+}
+  
+
+.footer .head-ref{
+    padding-top: 8px;
+    margin-bottom: 15px;
+    font-size:   20px;
+    color: rgb(8,140,165);
+}
+
+.footer .text1{
+    margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 640px), only screen and (max-device-width: 640px){
+
 }
