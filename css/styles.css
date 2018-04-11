@@ -13,6 +13,7 @@
     margin-left:  auto;
     margin-right: auto;  
     display: block;
+    margin-top: -0.5em;
     max-width: 1024px;
     min-width: 200px;
     font-family: "Montserrat";
@@ -191,6 +192,7 @@
         font-size: 3vw;
     }
 
+
     .two-blocks-ref .second p{ font-size: 6vw }
 
     .imgs-block .block-ref   { font-size: 6vw }
@@ -218,9 +220,11 @@
         max-width: 14vw;
         background-image: url('../images/button-menu.png');
         background-size: 100%; 
+        background-color: rgb(32,37,41);
+        background-repeat: no-repeat;
         display: flex;
     }
-
+    
     .footer .text2{ display: none}
 
     .footer{ font-size: 3vw; }  
