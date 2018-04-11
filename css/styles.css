@@ -10,132 +10,231 @@
 }
 
 .flex-container{
+    margin-left:  auto;
+    margin-right: auto;  
     display: block;
-    max-width: 320px;
+    max-width: 1024px;
     min-width: 200px;
     font-family: "Montserrat";
-    font-size: 15px;
 }
 
-/* Navigation div */
-.nav{
+ .nav {
+    display:flex;
+    background-color: #373c3f;
+    height:95px;
+    font-size: 14px;
+}
+
+.nav .navhead650px{ display: none;}
+.nav .menu-icon   { display: none;}
+
+.nav_menu{
     display: flex;
-    height: 35px;
-    background-color: rgb(55,60,63);
+    justify-content: center;
+    align-items: center;
 }
-.nav .text{
-    width: 250px;
+.nav ul{
+    list-style: none;
+}
+    
+.nav_menu a {
+    text-decoration: none; /*убираем подчеркивание текста ссылок*/
     color: #ffffff;
-    padding-left: 35px;
-    padding-top: 7px;
+    line-height: 90px;
+    margin-left: 30px;
 }
-.nav .menu-button img{
-    width: 35px;
-    height: 35px;
+    
+.nav_menu li {
+    float:left; /*Размещаем список горизонтально для реализации меню*/
+    margin-right:5px; /*Добавляем отступ у пунктов меню*/
 }
 
 .main-block{
-    display: block;
-    height: 175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 560px;
     background: linear-gradient(to bottom right,
                 rgb(25,180,198), rgb(7,138,164));
-    padding-left: 15px;
+    padding-left:  40px;
+    padding-right: 40px;
 }
 .main-block .main-text{
-    padding-top:45px;
-    font-size: 21px;
+    font-size: 65px;
     color: rgb(255,255,255);
 }
 .main-block .refs{
     display: flex;
-    margin-top: 10px;
+    margin-top: 2vw;
 }
 
 .main-block .refs .site-ref{
-    width: 230px;
-    font-size: 13px;
+    width: 760px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
     color:rgba(255,255,255,0.6);
 }
 .main-block .refs .arrow{
     font-weight: bold;
+    font-size: 60px;
     color: rgb(255,255,255);
 }
 
 .two-blocks-ref{
     display: flex;
-    height: 75px;
-    align-content: space-between;
-}
-.two-blocks-ref .first .text{
-    padding-top: 30px;
-    display: flex;
-    justify-content: center;
-    color: rgb(145,129,159);
-    font-size: 10px;
+    height: 200px;
 }
 .two-blocks-ref .first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 800px;
     background-color: rgb(39,33,44);
 }
+.two-blocks-ref .first .text{
+    display: flex;
+    color: rgb(145,129,159);
+    font-size: 25px;
+}
+
 .two-blocks-ref .second{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 224px;
     background-color: rgb(188,49,131);
 }
 
 .two-blocks-ref .second p{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    font-size: 22px;
-    color: rgb(255,255,255);
-}
-
-.block-ref{
-    height: 270px;
-    background: rgb( 91, 15, 161);
-}
-.block-ref{
-    align-items: center;
-    display: flex;
-    justify-content: center;
     font-size: 50px;
     color: rgb(255,255,255);
 }
 
-.img1 img{
-    width: 320px;
-    height: 270px;
+
+.imgs-block {
+    display: flex;
+    height: 27vw;
+    max-height: 290px;
+}
+
+.imgs-block .block-ref{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    background: rgb( 91, 15, 161);
+    color: rgb(255,255,255);
+    width: 33vw;
+}
+
+.img1{
+    width: 33vw;
+    background-image: url('../images/bridge.png');
+    background-size: 100%;  
 }
 
 .img2{
-    margin-top: -3px;
-}
-.img2 img{
-    width: 320px;
-    height: 270px;
+    width: 33vw;
+    background-image: url('../images/girl.png');
+    background-size: 100%;
 }
 
 .footer{
     background-color: rgb(235,235,235);
     color: rgb( 81, 81, 81 );
-    padding-left:25px;
     padding-right:30px;
+    padding-bottom: 30px;
     font-size:   14px;
     line-height: 1.63;
 }
-  
 
 .footer .head-ref{
-    padding-top: 8px;
+    padding-top: 15px;
     margin-bottom: 15px;
-    font-size:   20px;
+    margin-left: 70px;
+    margin-right: 70px;
+    font-size:   30px;
     color: rgb(8,140,165);
 }
-
+.footer .text{
+    display: flex;
+}
 .footer .text1{
-    margin-bottom: 15px;
+    margin-left: 70px;
+    width: 400px;
+}
+.footer .text2{
+    margin-left: 70px;
+    width: 400px;
+}
+
+@media only screen and (max-width: 835px), only screen and (max-device-width: 835px){
+    .main-block{
+        height: 60vw;
+    }
+    .main-block .main-text{
+        font-size: 6vw;
+    }
+    .main-block .refs .site-ref{
+        font-size: 4vw;
+    }
+    .main-block .refs .arrow{
+        font-weight: bold;
+        font-size: 7vw;
+    }
+
+    .two-blocks-ref{
+        height: 20vw;
+    }
+    .two-blocks-ref .first .text{
+        font-size: 3vw;
+    }
+
+    .two-blocks-ref .second p{ font-size: 6vw }
+
+    .imgs-block .block-ref   { font-size: 6vw }
+
 }
 
 @media only screen and (max-width: 640px), only screen and (max-device-width: 640px){
+    .nav{
+        height: 14vw;
+    }
+    .nav_menu{
+        display:none;
+    }
+    .nav .navhead650px{
+        align-items: center;
+        display: flex;
+        width: 650px;
+        font-size: 4vw;
+        color: #fff;
+        padding-left: 35px;
+    }
 
+    .nav .menu-icon{
+        width: 100%;
+        max-width: 14vw;
+        background-image: url('../images/button-menu.png');
+        background-size: 100%; 
+        display: flex;
+    }
+
+    .footer .text2{ display: none}
+
+    .footer{ font-size: 3vw; }  
+    .footer .head-ref { 
+        font-size: 4vw;
+        margin-left: 8vw;
+    }
+    .footer .text{
+        word-wrap: normal;
+    }
+    .footer .text1{
+        margin-left: 8vw;
+        width: 80vw;
+    }
 }
+
+
