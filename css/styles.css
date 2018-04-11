@@ -209,20 +209,19 @@
     .nav .navhead650px{
         align-items: center;
         display: flex;
-        width: 650px;
         font-size: 4vw;
         color: #fff;
+        width:100%;
         padding-left: 35px;
     }
 
     .nav .menu-icon{
         width: 100%;
-        max-width: 14vw;
+        height: 100%;
+        max-width: 16vw;
         background-image: url('../images/button-menu.png');
         background-size: 100%; 
-        background-color: rgb(32,37,41);
-        background-repeat: no-repeat;
-        display: flex;
+        display: inline-flex;
     }
     
     .footer .text2{ display: none}
